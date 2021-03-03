@@ -7,6 +7,7 @@
 
 .container{
     width: 100%;
+    
 }
 
 .container-header{
@@ -15,25 +16,63 @@
     background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .title-header{
+    position: absolute;
     color: #000;
-    margin-left: 10px;
+    left: 10px;
     font-size:40px;
     font-family: 'Keania One';
 }
 
+span{
+    color: #fff;
+    background: red;
+    padding: 0px 10px;
+}
+
+.container-icons{
+    width: 200px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+.fab{
+    font-size: 20px;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #111;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .5s ease-out;
+}
+
+
+.fab:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    
+}
+
 .container-body{
     width: 100%;
+    height: 84.6vh;
     display: flex;
 }
 
 .container-title{
     position: relative;
     width: 60%;
-    height: 90vh;
-    background-color: #fff;
+    height: 83vh;
+    background-color: transparent;
 }
 
 .title-body{
@@ -42,33 +81,40 @@
    position: absolute;
    top: 30%;
    left: 100px;
+    
 }
 
 .container-btn{
     position: absolute;
     width: 100%;
-    top: 62%;
+    top: 68%;
     left: 100px;
 }
 
 .btn-ingresar{
     padding: 20px 100px;
     border: 2px solid #000;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: 50px;
     color: #000;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'keania One';
     cursor: pointer;
-    margin-right: 20px
+    margin-right: 20px;
+    transition: all .5s ease-out;
+}
+
+.btn-ingresar:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 .btn-votar{
     padding: 20px 100px;
     border-radius: 50px;
-    background-color: #000;
+    background-color: red;
     color: #fff;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'keania One';
     cursor: pointer;
 }
@@ -76,13 +122,192 @@
 .container-logo{
     position: relative;
     width: 40%;
-    height: 90vh;
+    height: 83vh;
     background-color: transparent;
 }
 
 .logo{
     position: absolute;
     left: 20px;
-    top: 5%;
+    top: 8%;
     width: 500px;
 }
+
+.container-footer{
+   background-color: transparent; 
+   padding: 12px;
+   text-align: center;
+}
+
+.content-segurity{
+    color: #111;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'keania One';
+}
+
+.container-form{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 120px;
+    left: 330px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+    transition: all 1.5s ease-out;
+    display: none;
+   
+}
+
+
+.img-login{
+    width: 400px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.formulario{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container-forms{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    top:30px;
+    right: 20px;
+    padding: 50px 10px;
+    display: block;
+}
+
+.container-forms2{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    top:50px;
+    right: 20px;
+    padding: 30px 10px;
+    display: none;
+}
+
+.campo{
+    width: 100%;
+    padding: 15px;
+    border:none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px;
+}
+
+.campo:focus{
+    outline: none;
+}
+
+.title-form{
+    font-size: 40px;
+    font-family: 'Keania One';
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.title-form2{
+    font-size: 40px;
+    font-family: 'Keania One';
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.campo-btn{
+    padding: 15px 90px;
+    margin-left: 78px;
+    font-size: 23px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-family: 'keania One';
+    background-color: #000;
+    color: #fff;
+    margin-top: 5px;
+}
+.campo-btn:focus{
+    outline: none;
+}
+
+.campo-btn2{
+    padding: 15px 90px;
+    margin-left: 50px;
+    font-size: 23px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-family: 'keania One';
+    background-color: #000;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.campo-btn2:focus{
+    outline: none;
+}
+
+#close{
+    font-size: 45px;
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    cursor: pointer;
+}
+
+.registro{
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #005dd1;
+    cursor: pointer;
+    display: block;
+}
+
+.registro:hover{
+    color: blue;
+}
+
+.iniciar{
+    display: table;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #1a5eaf;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+    font-family: 'keania One';
+}
+
+#arrow{
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
