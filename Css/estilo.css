@@ -6,7 +6,9 @@
 }
 
 .container{
+    position: relative;
     width: 100%;
+    height: 90vh
     
 }
 
@@ -54,7 +56,6 @@ span{
     transition: all .5s ease-out;
 }
 
-
 .fab:hover{
     background-color: #fff;
     color: #000;
@@ -64,35 +65,28 @@ span{
 
 .container-body{
     width: 100%;
-    height: 84.6vh;
+    height: 90vh;
     display: flex;
 }
 
-.container-title{
-    position: relative;
-    width: 60%;
-    height: 83vh;
-    background-color: transparent;
-}
-
 .title-body{
+   position: absolute;
+   width: 60%;
    font-size: 70px;
    font-family: 'Keania One';
-   position: absolute;
-   top: 30%;
-   left: 100px;
+   top: 35%;
+   left: 70px;
     
 }
 
 .container-btn{
     position: absolute;
-    width: 100%;
-    top: 68%;
-    left: 100px;
+    top: 70%;
+    left: 70px;
 }
 
 .btn-ingresar{
-    padding: 20px 100px;
+    padding: 25px 120px;
     border: 2px solid #000;
     background-color: #fff;
     border-radius: 50px;
@@ -101,7 +95,7 @@ span{
     font-family: 'keania One';
     cursor: pointer;
     margin-right: 20px;
-    transition: all .5s ease-out;
+    transition: all .4s ease-out;
 }
 
 .btn-ingresar:hover{
@@ -110,7 +104,7 @@ span{
 }
 
 .btn-votar{
-    padding: 20px 100px;
+    padding: 25px 120px;
     border-radius: 50px;
     background-color: red;
     color: #fff;
@@ -119,17 +113,10 @@ span{
     cursor: pointer;
 }
 
-.container-logo{
-    position: relative;
-    width: 40%;
-    height: 83vh;
-    background-color: transparent;
-}
-
 .logo{
     position: absolute;
-    left: 20px;
-    top: 8%;
+    right: 40px;
+    top: 15%;
     width: 500px;
 }
 
