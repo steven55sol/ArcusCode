@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -8,53 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>ArcusCode</title>
 </head>
+
 <body>
     <main class="container">
         <header class="container-header">
             <h1 class="title-header"><span>Arcus</span>Code</h1>
             <section class="container-icons">
-                <a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube" title="Youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-f" title="Facebook" id="fab"></i></a>
+                <a href="#"><i class="fab fa-instagram" title="Instagram" id="fab"></i></a>
+                <a href="#"><i class="fab fa-youtube" title="Youtube" id="fab"></i></a>
             </section>
         </header>
-        <section class="container-body">
-           <div class="container-title">
-            <p class="title-body">Desarrolla tu diseño ideal y compite.</p>
-            <div class="container-btn">
-                <a class="btn-ingresar" id="btn">Ingresar</a>
-                <a class="btn-votar" id="btn-votar">Votar</a>
-            </div>
-           </div>
-           <div class="container-logo">
-            <img src="img/logo.png" alt="" class="logo">
-           </div> 
-        </section>
-        <div class="container-form" id="form">
-               <i class="fas fa-times-circle" id="close"></i>
-               <img src="img/undraw_secure_login_pdn4.svg" alt="" class="img-login">
-               <section class="formulario">
-                    <form action="" class="container-forms" id="camp-form">
-                        <h2 class="title-form">Ingresar</h2>
-                        <input type="text" class="campo" placeholder="Correo electronico">
-                        <input type="text" class="campo" placeholder="contraseña">
-                        <input type="submit" value="Entrar" class="campo-btn">
-                    </form>
-                    <form action="" class="container-forms2" id="camp-form2">
-                        <h2 class="title-form2">Registro</h2>
-                        <input type="text" placeholder="Nombre" class="campo">
-                        <input type="text" class="campo" placeholder="Correo electronico">
-                        <input type="text" class="campo" placeholder="contraseña">
-                        <input type="submit" value="Registrarse" class="campo-btn2">
-                    </form>
-                    <p class="registro" id="registro">Si no tienes cuenta Registrate aqui</p>
-                    <p class="iniciar" id="iniciar">Iniciar sesion<i class="fas fa-sign-in-alt" id="arrow"></i></p>
-               </section>
+        <p class="title-body">Desarrolla tu diseño ideal y compite.</p>
+        <div class="container-btn">
+            <a class="btn-ingresar" id="btn">Ingresar</a>
+            <a class="btn-votar" id="btn-votar">Votar</a>
         </div>
-        <footer class="container-footer">
-           <p class="content-segurity">&copy; Derechos Reservados-ArcusCode</p>
-       </footer>
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="container-form" id="form">
+            <i class="fas fa-times-circle" id="close"></i>
+            <img src="img/undraw_secure_login_pdn4.svg" alt="" id="security" class="img-login">
+            <div class="container-img_foto" id="img-foto">
+                <i class="fas fa-camera" id="icon-camera"></i>
+            </div>
+            <input type="submit" value="Agregar imagen" class="btn-agregar" id="btn-agg">
+            <section class="formulario">
+                <form action="" class="container-forms" id="camp-form">
+                    <h2 class="title-form">Ingresar</h2>
+                    <input type="text" class="campo" placeholder="Correo electronico">
+                    <input type="text" class="campo" placeholder="contraseña">
+                    <input type="submit" value="Entrar" class="campo-btn">
+                </form>
+                <form action="" class="container-forms2" id="camp-form2">
+                    <h2 class="title-form2">Registro</h2>
+                    <input type="text" placeholder="Nombre" class="campo">
+                    <input type="text" class="campo" placeholder="Correo electronico">
+                    <input type="text" class="campo" placeholder="contraseña">
+                    <input type="submit" value="Registrarse" class="campo-btn2">
+                </form>
+                <p class="registro" id="registro">Si no tienes cuenta Registrate aqui</p>
+                <p class="iniciar" id="iniciar">Iniciar sesion<i class="fas fa-sign-in-alt" id="arrow"></i></p>
+            </section>
+        </div>
     </main>
+    <footer class="container-footer">
+        <p class="content-segurity">&copy; Derechos Reservados-ArcusCode</p>
+    </footer>
     <script src="js/form.js"></script>
 </body>
+
 </html>
